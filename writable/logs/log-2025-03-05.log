@@ -1,0 +1,113 @@
+ERROR - 2025-03-05 11:11:37 --> Invalid payment details received.
+ERROR - 2025-03-05 11:12:25 --> Invalid payment details received.
+ERROR - 2025-03-05 11:12:33 --> Invalid payment details received.
+ERROR - 2025-03-05 11:17:52 --> Invalid payment details received.
+ERROR - 2025-03-05 11:22:19 --> Invalid payment details received.
+ERROR - 2025-03-05 11:22:32 --> Invalid payment details received.
+ERROR - 2025-03-05 11:23:48 --> Invalid payment details received.
+ERROR - 2025-03-05 11:25:57 --> Invalid payment details received.
+ERROR - 2025-03-05 11:28:49 --> Invalid payment details received.
+ERROR - 2025-03-05 11:30:06 --> Invalid payment details received.
+ERROR - 2025-03-05 11:55:45 --> ❌ Payment processing error: Authentication failed
+ERROR - 2025-03-05 12:00:44 --> ❌ Payment processing error: Order amount less than minimum amount allowed
+ERROR - 2025-03-05 12:02:32 --> ❌ Payment processing error: Order amount less than minimum amount allowed
+ERROR - 2025-03-05 12:09:19 --> Payment processing error: Order amount less than minimum amount allowed
+CRITICAL - 2025-03-05 12:09:38 --> Error: Class "Google\ApiCore\Serializer" not found
+[Method: POST, Route: payment/process]
+in VENDORPATH\google\cloud-core\src\GrpcRequestWrapper.php on line 93.
+ 1 VENDORPATH\google\cloud-firestore\Connection\Grpc.php(81): Google\Cloud\Core\GrpcRequestWrapper->__construct([...])
+ 2 VENDORPATH\google\cloud-firestore\FirestoreClient.php(110): Google\Cloud\Firestore\Connection\Grpc->__construct([...])
+ 3 APPPATH\Controllers\PaymentController.php(111): Google\Cloud\Firestore\FirestoreClient->__construct([...])
+ 4 APPPATH\Controllers\PaymentController.php(61): App\Controllers\PaymentController->storeTransaction('razorpay', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaymentController->processPayment()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\payment\\public\\index.php')
+CRITICAL - 2025-03-05 12:09:48 --> Error: Class "Google\ApiCore\Serializer" not found
+[Method: POST, Route: payment/process]
+in VENDORPATH\google\cloud-core\src\GrpcRequestWrapper.php on line 93.
+ 1 VENDORPATH\google\cloud-firestore\Connection\Grpc.php(81): Google\Cloud\Core\GrpcRequestWrapper->__construct([...])
+ 2 VENDORPATH\google\cloud-firestore\FirestoreClient.php(110): Google\Cloud\Firestore\Connection\Grpc->__construct([...])
+ 3 APPPATH\Controllers\PaymentController.php(111): Google\Cloud\Firestore\FirestoreClient->__construct([...])
+ 4 APPPATH\Controllers\PaymentController.php(61): App\Controllers\PaymentController->storeTransaction('razorpay', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaymentController->processPayment()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\payment\\public\\index.php')
+CRITICAL - 2025-03-05 12:10:25 --> Error: Class "Google\ApiCore\Serializer" not found
+[Method: POST, Route: payment/process]
+in VENDORPATH\google\cloud-core\src\GrpcRequestWrapper.php on line 93.
+ 1 VENDORPATH\google\cloud-firestore\Connection\Grpc.php(81): Google\Cloud\Core\GrpcRequestWrapper->__construct([...])
+ 2 VENDORPATH\google\cloud-firestore\FirestoreClient.php(110): Google\Cloud\Firestore\Connection\Grpc->__construct([...])
+ 3 APPPATH\Controllers\PaymentController.php(111): Google\Cloud\Firestore\FirestoreClient->__construct([...])
+ 4 APPPATH\Controllers\PaymentController.php(61): App\Controllers\PaymentController->storeTransaction('razorpay', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaymentController->processPayment()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\payment\\public\\index.php')
+ERROR - 2025-03-05 12:14:23 --> Razorpay Order Creation Failed: Order amount less than minimum amount allowed
+CRITICAL - 2025-03-05 12:17:34 --> Error: Class "Google\ApiCore\Serializer" not found
+[Method: POST, Route: payment/process]
+in VENDORPATH\google\cloud-core\src\GrpcRequestWrapper.php on line 93.
+ 1 VENDORPATH\google\cloud-firestore\Connection\Grpc.php(81): Google\Cloud\Core\GrpcRequestWrapper->__construct([...])
+ 2 VENDORPATH\google\cloud-firestore\FirestoreClient.php(110): Google\Cloud\Firestore\Connection\Grpc->__construct([...])
+ 3 APPPATH\Controllers\PaymentController.php(117): Google\Cloud\Firestore\FirestoreClient->__construct([...])
+ 4 APPPATH\Controllers\PaymentController.php(67): App\Controllers\PaymentController->storeTransaction('razorpay', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaymentController->processPayment()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\payment\\public\\index.php')
+CRITICAL - 2025-03-05 12:20:16 --> Error: Class "Google\ApiCore\Serializer" not found
+[Method: POST, Route: payment/process]
+in VENDORPATH\google\cloud-core\src\GrpcRequestWrapper.php on line 93.
+ 1 VENDORPATH\google\cloud-firestore\Connection\Grpc.php(81): Google\Cloud\Core\GrpcRequestWrapper->__construct([...])
+ 2 VENDORPATH\google\cloud-firestore\FirestoreClient.php(110): Google\Cloud\Firestore\Connection\Grpc->__construct([...])
+ 3 APPPATH\Controllers\PaymentController.php(121): Google\Cloud\Firestore\FirestoreClient->__construct([...])
+ 4 APPPATH\Controllers\PaymentController.php(68): App\Controllers\PaymentController->storeTransaction('razorpay', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaymentController->processPayment()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\payment\\public\\index.php')
+CRITICAL - 2025-03-05 12:26:28 --> Error: Class "Google\ApiCore\Serializer" not found
+[Method: POST, Route: payment/process]
+in VENDORPATH\google\cloud-core\src\GrpcRequestWrapper.php on line 93.
+ 1 VENDORPATH\google\cloud-firestore\Connection\Grpc.php(81): Google\Cloud\Core\GrpcRequestWrapper->__construct([...])
+ 2 VENDORPATH\google\cloud-firestore\FirestoreClient.php(110): Google\Cloud\Firestore\Connection\Grpc->__construct([...])
+ 3 APPPATH\Controllers\PaymentController.php(121): Google\Cloud\Firestore\FirestoreClient->__construct([...])
+ 4 APPPATH\Controllers\PaymentController.php(68): App\Controllers\PaymentController->storeTransaction('razorpay', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaymentController->processPayment()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\payment\\public\\index.php')
+CRITICAL - 2025-03-05 12:26:36 --> Error: Class "Google\ApiCore\Serializer" not found
+[Method: POST, Route: payment/process]
+in VENDORPATH\google\cloud-core\src\GrpcRequestWrapper.php on line 93.
+ 1 VENDORPATH\google\cloud-firestore\Connection\Grpc.php(81): Google\Cloud\Core\GrpcRequestWrapper->__construct([...])
+ 2 VENDORPATH\google\cloud-firestore\FirestoreClient.php(110): Google\Cloud\Firestore\Connection\Grpc->__construct([...])
+ 3 APPPATH\Controllers\PaymentController.php(121): Google\Cloud\Firestore\FirestoreClient->__construct([...])
+ 4 APPPATH\Controllers\PaymentController.php(68): App\Controllers\PaymentController->storeTransaction('razorpay', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaymentController->processPayment()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\payment\\public\\index.php')
