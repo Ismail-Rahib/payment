@@ -19,7 +19,7 @@ This project integrates **Razorpay** for payment processing and **Twilio** for O
 
 ## 📌 Prerequisites  
 Ensure you have the following installed:  
-- ✅ PHP 7.4+  
+- ✅ PHP 8.2+  
 - ✅ Composer  
 - ✅ CodeIgniter 4  
 - ✅ Twilio Account (for SMS)  
@@ -34,19 +34,22 @@ Ensure you have the following installed:
 ### 1️⃣ Get Required API Credentials 🔑  
 
 #### **Twilio Setup**  
-1. Sign up at [Twilio](https://www.twilio.com/).  
-2. Verify your phone number 📞.  
-3. Get a free Twilio phone number.  
-4. Copy your **Twilio SID**, **Auth Token**, and **Phone Number**.  
+1. Sign up at [Twilio](https://www.twilio.com/).
+2. install sdk.  
+3. Verify your phone number 📞.  
+4. Get a free Twilio phone number.  
+5. Copy your **Twilio SID**, **Auth Token**, and **Phone Number**.  
 
 #### **Razorpay Setup**  
-1. Sign up at [Razorpay](https://razorpay.com/).  
-2. Create an API Key and Secret replace in config.  
+1. Sign up at [Razorpay](https://razorpay.com/).
+2. install sdk .
+3. Create an API Key and Secret replace in config.  
 
 #### **Firebase Firestore Setup**  
 1. Go to [Firebase Console](https://console.firebase.google.com/).  
-2. Create a new project and enable Firestore.  
-3. Get your **Firestore credentials JSON file** replace in writable folder.  
+2. Create a new project and enable Firestore.
+3. install sdk.
+4. Get your **Firestore credentials JSON file** replace in writable folder.  
 
 ---
 
