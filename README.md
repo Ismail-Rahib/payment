@@ -50,7 +50,19 @@ Ensure you have the following installed:
 
 ---
 
+## 🛠️ Usage
+1. Open `http://localhost:8080/payment` in your browser.
+2. Enter your details.
+3. click pay 🔑.
+4. choose payemnt method(acc no., card etc) 🏆.
+5. check in firestore for details 🚪.
+6. check for confirmation message in phone.
+7. 
 ### 2️⃣ Clone the Repository  
 ```sh
 git clone https://github.com/Ismail-Rahib/payment-gateway.git
 cd payment-gateway
+
+## 📜 License
+This project is open-source under the [MIT License](LICENSE).
+
