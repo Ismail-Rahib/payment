@@ -1,6 +1,6 @@
 # 💳 Payment Gateway & confimation message  with details in CodeIgniter 4 🚀  
 
-This project integrates **Razorpay** for payment processing and **Twilio** for OTP verification and payment confirmation in **CodeIgniter 4 (CI4)**.  
+This project integrates **Razorpay** for payment processing and **Twilio** for payment confirmation in **CodeIgniter 4 (CI4)**.  
 
 ### 🔹 **How It Works:**   
 1. **Payment Processing:** After entering details, users can proceed to payment via **Razorpay**.  
@@ -38,7 +38,8 @@ Ensure you have the following installed:
 2. install sdk.  
 3. Verify your phone number 📞.  
 4. Get a free Twilio phone number.  
-5. Copy your **Twilio SID**, **Auth Token**, and **Phone Number**.  
+5. Copy your **Twilio SID**, **Auth Token**, and **Phone Number**.
+6. add keys in config file. 
 
 #### **Razorpay Setup**  
 1. Sign up at [Razorpay](https://razorpay.com/).
