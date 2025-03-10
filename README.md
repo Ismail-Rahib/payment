@@ -1,4 +1,4 @@
-# 💳 Payment Gateway & confimation message  with details in CodeIgniter 4 🚀  
+# 💳 Payment Gateway & confimation sms with details in CodeIgniter 4 🚀  
 
 This project integrates **Razorpay** for payment processing and **Twilio** for payment confirmation in **CodeIgniter 4 (CI4)**.  
 
