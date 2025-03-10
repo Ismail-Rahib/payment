@@ -1,60 +1,56 @@
-# CodeIgniter 4 Framework
+# 💳 Payment Gateway & confimation message  with details in CodeIgniter 4 🚀  
 
-## What is CodeIgniter?
+This project integrates **Razorpay** for payment processing and **Twilio** for OTP verification and payment confirmation in **CodeIgniter 4 (CI4)**.  
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+### 🔹 **How It Works:**   
+1. **Payment Processing:** After entering details, users can proceed to payment via **Razorpay**.  
+2. **Transaction Storage:** Payment details (email, phone, name, amount, transaction ID, timestamp) are stored in **Firestore**.  
+3. **Payment Confirmation:** A confirmation SMS is sent to the user via **Twilio**.  
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+---
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+## ✨ Features  
+- 💳 **Payment Gateway using Razorpay**  
+- 🗄 **Firestore for Storing Transaction Details**  
+- 🎯 **Dashboard Access after Successful Payment**  
+- 🔄 **Automatic Payment Confirmation via SMS**  
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+---
 
-## Important Change with index.php
+## 📌 Prerequisites  
+Ensure you have the following installed:  
+- ✅ PHP 7.4+  
+- ✅ Composer  
+- ✅ CodeIgniter 4  
+- ✅ Twilio Account (for OTP & SMS)  
+- ✅ Razorpay Account (for Payments)  
+- ✅ Firebase Firestore (for storing transactions)  
+- ✅ XAMPP or any local server environment  
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+---
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+## ⚡ Setup Instructions  
 
-**Please** read the user guide for a better explanation of how CI4 works!
+### 1️⃣ Get Required API Credentials 🔑  
 
-## Repository Management
+#### **Twilio Setup**  
+1. Sign up at [Twilio](https://www.twilio.com/).  
+2. Verify your phone number 📞.  
+3. Get a free Twilio phone number.  
+4. Copy your **Twilio SID**, **Auth Token**, and **Phone Number**.  
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+#### **Razorpay Setup**  
+1. Sign up at [Razorpay](https://razorpay.com/).  
+2. Create an API Key and Secret replace in config.  
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+#### **Firebase Firestore Setup**  
+1. Go to [Firebase Console](https://console.firebase.google.com/).  
+2. Create a new project and enable Firestore.  
+3. Get your **Firestore credentials JSON file** replace in writable folder.  
 
-## Contributing
+---
 
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 8.1 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+### 2️⃣ Clone the Repository  
+```sh
+git clone https://github.com/Ismail-Rahib/payment-gateway.git
+cd payment-gateway
