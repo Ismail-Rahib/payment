@@ -22,7 +22,7 @@ Ensure you have the following installed:
 - ✅ PHP 7.4+  
 - ✅ Composer  
 - ✅ CodeIgniter 4  
-- ✅ Twilio Account (for OTP & SMS)  
+- ✅ Twilio Account (for SMS)  
 - ✅ Razorpay Account (for Payments)  
 - ✅ Firebase Firestore (for storing transactions)  
 - ✅ XAMPP or any local server environment  
